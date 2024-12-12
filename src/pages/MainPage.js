@@ -23,12 +23,15 @@ function MainPage() {
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
         </div>
-        <div className="social-media">
-          <img src="/assets/images/github.svg" alt="" />
-          <img src="/assets/images/linkedin.svg" alt="" />
+        <div className="social-media d-flex gap-2">
+          <button style={{boxShadow:"rgba(206, 180, 154, 0.4) 5px 5px",border:"1px dotted black"}} ><img src="/assets/images/github.svg" alt="" /></button>
+          <button style={{boxShadow:"rgba(206, 180, 154, 0.4) 5px 5px",border:"1px dotted black"}} ><img src="/assets/images/linkedin.svg" alt="" /></button>
+          
+
+          
         </div>
       </div>
-      <div className="d-flex justify-content-end align-items-center p-5">
+      <div className="middle-section d-flex justify-content-end align-items-center p-3" >
         <div className="desc text-start">
           <div className="title">
             <div>Hello I'am Selman Yıldız</div>
@@ -47,7 +50,7 @@ function MainPage() {
           <img
             src="/assets/images/hero.png"
             alt="hero"
-            style={{ width: "300px", height: "auto" }}
+            style={{ maxWidth: "200px", height: "auto" }}
           />
         </div>
         <button type="button" class="btn btn-dark">
@@ -59,6 +62,24 @@ function MainPage() {
           />
         </button>
       </div>
+      {/* <div style={{ height: "1px", backgroundColor: "gray" }}></div> */}
+      <h3 className="text-center mb-3">My Skills</h3>
+      <div className="skills d-flex justify-content-around align-items-center">
+        
+        <div style={{boxShadow:" rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px"}}>
+          <img src="/assets/images/git.svg" alt="" width={60} />
+        </div>
+        <div style={{boxShadow:" rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px"}}>
+          a
+        </div>
+        <div style={{boxShadow:" rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px"}}>
+          a
+        </div>
+        <div style={{boxShadow:" rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px"}}>
+          s
+        </div>
+      </div>
+      
     </div>
   );
 }

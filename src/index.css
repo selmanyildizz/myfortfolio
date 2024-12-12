@@ -19,20 +19,35 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.links{
-  width: 300px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.links a{
-  color:#212529;
-  text-decoration: none;
-}
-.hi-text{
-  margin-left:0.5rem;
-}
-
 .title{
   font-size: 30px;
+}
+.links {
+  width: 100%; /* Responsive için genişliği tam yapıyoruz */
+  display: flex;
+  justify-content: center; /* Ortaya hizalama */
+  align-items: center;
+  gap: 1rem; /* Aralarına boşluk ekliyoruz */
+}
+
+.links a {
+  display: inline-block; /* Tıklama alanını genişletir */
+  color: #212529;
+  text-decoration: none;
+  padding: 5px 10px; /* Daha iyi bir tıklama alanı */
+  font-weight: 600; /* Daha belirgin görünüm */
+}
+
+@media screen and (max-width: 600px) {
+  .middle-section,
+  .topMenu {
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Mobilde düzgün hizalama */
+  }
+
+  .links {
+    flex-direction: column; /* Bağlantıları dikey hizala */
+    gap: 0.5rem; /* Daha az boşluk */
+  }
 }
